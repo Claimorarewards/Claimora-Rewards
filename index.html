@@ -137,24 +137,53 @@
       60% { transform: translateY(5px) scale(0.95) rotate(5deg); }
     }
 
-    /* Welcome / Start Banner Chini ya Box */
-    .welcome-card {
-      margin-top: 12px;
+    /* SEHEMU MPYA YA BANNER YENYE MANENO NA KITUFE KIDOGO CHA CLICK NOW */
+    .cta-welcome-banner {
+      margin-top: 14px;
       background: #ffffff;
-      padding: 12px 16px;
-      border-radius: 16px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      padding: 16px 18px;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
       border: 2px dashed #0284c7;
       text-align: center;
       width: 95%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
     }
-    .welcome-card h2 {
-      font-size: 14.5px;
-      color: #0f172a;
+
+    .cta-welcome-banner h2 {
+      font-size: 15px;
       font-weight: 800;
+      color: #0f172a;
+      line-height: 1.4;
     }
-    .welcome-card span {
-      color: #ef4444;
+
+    .cta-welcome-banner h2 span {
+      color: #0284c7;
+    }
+
+    /* Kitufe Kidogo Kilichotulia (Static Small Button) */
+    .mini-play-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 8px 22px;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #ffffff !important;
+      text-decoration: none !important;
+      font-weight: 800;
+      font-size: 13px;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .mini-play-btn:hover, .mini-play-btn:active {
+      opacity: 0.9;
     }
 
     /* Orodha ya Kadi za Zawadi */
@@ -271,32 +300,45 @@
       padding-bottom: 15px;
     }
 
-    /* FOOTER YA PICHA YAKO HALISI (CROWD BACKGROUND ILIYOSAFISHWA NA UKUNGU WAKE) */
+    /* FOOTER SAFSI YA PICHA YAKO HALISI */
     .real-crowd-footer {
       width: 100vw;
       margin-left: calc(-50vw + 50%);
       margin-right: calc(-50vw + 50%);
-      height: 210px;
+      height: 220px;
       position: relative;
-      /* Tumeweka gradient nyepesi sana juu ili picha yako ionekane pure na ukungu wake wa vivuli udhihirike vizuri */
-      background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.85)), url('Claimora-Rewards.jpg');
+      background-image: url('Claimora-Rewards.jpg');
       background-size: cover;
       background-position: center bottom;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
       margin-top: 25px;
-      box-shadow: inset 0 10px 15px rgba(0,0,0,0.3);
+      border-top: 4px solid #0284c7;
+    }
+
+    .footer-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 50px;
+      background: linear-gradient(to top, rgba(15, 23, 42, 0.9), transparent);
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding-bottom: 15px;
+      z-index: 1;
     }
 
     .copyright-text {
-      color: #f8fafc;
-      font-size: 12px;
+      color: #ffffff;
+      font-size: 11.5px;
       font-weight: 600;
       letter-spacing: 0.5px;
-      text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+      text-shadow: 0 2px 4px rgba(0,0,0,0.9);
       position: relative;
       z-index: 2;
     }
@@ -334,9 +376,10 @@
       </div>
     </a>
     
-    <!-- Welcome Text Chini ya Box -->
-    <div class="welcome-card">
-      <h2>🎉 Welcome! <span>Start, Get & Win Rewards Below</span> 👇</h2>
+    <!-- BANNER YA MANENO NA KITUFE KIDOGO CHA CLICK NOW -->
+    <div class="cta-welcome-banner">
+      <h2>🎉 Welcome & Enjoy! Play <span>Claimora Rewards</span> — Click Below to Play & Win Your Reward! 👇</h2>
+      <a href="https://uplcm.com/4/12012476" target="_blank" class="mini-play-btn">🎮 CLICK NOW</a>
     </div>
   </div>
 
@@ -417,9 +460,11 @@
 
 </div>
 
-<!-- FOOTER INAYOTUMIA PICHA YAKO YA Claimora-Rewards.jpg KAMA BACKGROUND -->
+<!-- FOOTER SAFSI YA PICHA YAKO HALISI -->
 <div class="real-crowd-footer">
-  <div class="copyright-text">© 2026 Claimora Rewards. All rights reserved.</div>
+  <div class="footer-overlay">
+    <div class="copyright-text">© 2026 Claimora Rewards. All rights reserved.</div>
+  </div>
 </div>
 
 </body>
