@@ -48,7 +48,7 @@
       opacity: 0.95;
     }
 
-    /* ENEO LA BOKSI NA STICKER YA KATUNI YA USHINDI */
+    /* ENEO LA BOKSI NA VITU VITATU VYA USHINDI */
     .promo-banner {
       text-align: center;
       margin-bottom: 18px;
@@ -73,14 +73,14 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 0 15px;
+      padding: 0 10px;
       box-shadow: 0 12px 28px rgba(147, 51, 234, 0.35);
       overflow: hidden;
       border: 3px solid #ffffff;
       cursor: pointer;
     }
 
-    /* Maua/Confetti Kubwa Zinazoruka na Kumwagika */
+    /* Maua/Confetti za Nyuma */
     .local-petal {
       position: absolute;
       width: 12px;
@@ -94,42 +94,47 @@
       100% { top: 210px; transform: translateX(40px) rotate(360deg); }
     }
 
-    .lp1 { left: 5%; background: #ff2a75; animation-duration: 1.7s; }
-    .lp2 { left: 20%; background: #ffd700; animation-duration: 2.2s; animation-delay: 0.3s; width: 14px; height: 14px; }
-    .lp3 { left: 35%; background: #00e5ff; animation-duration: 1.9s; animation-delay: 0.1s; }
-    .lp4 { left: 55%; background: #22c55e; animation-duration: 2.4s; animation-delay: 0.5s; }
-    .lp5 { left: 75%; background: #ff9900; animation-duration: 1.8s; animation-delay: 0.2s; width: 13px; height: 13px; }
-    .lp6 { left: 90%; background: #e879f9; animation-duration: 2.1s; animation-delay: 0.4s; }
+    .lp1 { left: 8%; background: #ff2a75; animation-duration: 1.7s; }
+    .lp2 { left: 25%; background: #ffd700; animation-duration: 2.2s; animation-delay: 0.3s; width: 14px; height: 14px; }
+    .lp3 { left: 45%; background: #00e5ff; animation-duration: 1.9s; animation-delay: 0.1s; }
+    .lp4 { left: 70%; background: #22c55e; animation-duration: 2.4s; animation-delay: 0.5s; }
+    .lp5 { left: 88%; background: #ff9900; animation-duration: 1.8s; animation-delay: 0.2s; width: 13px; height: 13px; }
 
-    /* Box la Zawadi Linalotaka Kufunguka */
-    .visual-gift-box {
-      font-size: 65px;
+    /* 1. KIPENGELE CHA KWANZA: Gift Box Inayoruka */
+    .item-box {
+      font-size: 58px;
       z-index: 5;
-      animation: gift-open-bounce 2s infinite ease-in-out;
+      animation: bounce-box 2s infinite ease-in-out;
       filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
     }
-
-    @keyframes gift-open-bounce {
-      0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
-      25% { transform: translateY(-6px) scale(1.06) rotate(-3deg); }
-      50% { transform: translateY(-2px) scale(1.1) rotate(3deg); }
-      75% { transform: translateY(-5px) scale(1.04) rotate(-2deg); }
+    @keyframes bounce-box {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-8px) scale(1.08); }
     }
 
-    /* Sticker ya Katuni ya Ushindi (Inaruka, Inatulia, na Kucheza kwa Furaha) */
-    .winner-cartoon-sticker {
-      font-size: 62px;
+    /* 2. KIPENGELE CHA PILI: Noti za Pesa / Sarafu (Cash/Money) */
+    .item-cash {
+      font-size: 50px;
       z-index: 5;
-      animation: cartoon-winner-dance 2s infinite ease-in-out;
-      filter: drop-shadow(0 8px 15px rgba(0,0,0,0.4));
+      animation: bounce-cash 1.8s infinite ease-in-out alternate;
+      filter: drop-shadow(0 6px 10px rgba(0,0,0,0.3));
+    }
+    @keyframes bounce-cash {
+      0% { transform: translateY(-5px) rotate(-8deg) scale(0.95); }
+      100% { transform: translateY(8px) rotate(8deg) scale(1.1); }
     }
 
-    @keyframes cartoon-winner-dance {
+    /* 3. KIPENGELE CHA TATU: Kikombe cha Ushindi & Nyota (Trophy & Stars) */
+    .item-trophy {
+      font-size: 52px;
+      z-index: 5;
+      animation: bounce-trophy 2.2s infinite ease-in-out;
+      filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
+    }
+    @keyframes bounce-trophy {
       0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
-      20% { transform: translateY(-15px) scale(1.15) rotate(-8deg); } /* Anaruka juu kwa furaha */
-      40% { transform: translateY(0) scale(0.95) rotate(0deg); }    /* Anagusa chini */
-      55% { transform: translateY(-8px) scale(1.08) rotate(8deg); }  /* Anacheza kuonyesha kikombe */
-      70% { transform: translateY(0) scale(1) rotate(0deg); }       /* Anatulia kidogo */
+      30% { transform: translateY(-10px) scale(1.12) rotate(-5deg); }
+      60% { transform: translateY(5px) scale(0.95) rotate(5deg); }
     }
 
     /* Welcome / Start Banner Chini ya Box */
@@ -277,23 +282,25 @@
     <p>Discover gift card information, rewards programs, special offers, and giveaway opportunities. Explore promotion details and claim your rewards easily.</p>
   </div>
 
-  <!-- Boksi la Zawadi na Sticker ya Katuni ya Ushindi -->
+  <!-- Eneo la Vitu Vitatu vya Ushindi (Linked to Monetag) -->
   <div class="promo-banner">
     <a href="https://uplcm.com/4/12012476" target="_blank" class="gift-box-link">
       <div class="gift-box-area">
-        <!-- Maua ya Ushindi -->
+        <!-- Maua ya Nyuma -->
         <div class="local-petal lp1"></div>
         <div class="local-petal lp2"></div>
         <div class="local-petal lp3"></div>
         <div class="local-petal lp4"></div>
         <div class="local-petal lp5"></div>
-        <div class="local-petal lp6"></div>
 
-        <!-- Boksi la Zawadi Linalofunguka -->
-        <div class="visual-gift-box">🎁</div>
+        <!-- 1. Gift Box -->
+        <div class="item-box">🎁</div>
 
-        <!-- Sticker ya Katuni ya Mshindi (Inaruka na Kucheza kwa Furaha) -->
-        <div class="winner-cartoon-sticker">👦🏆</div>
+        <!-- 2. Cash / Pesa -->
+        <div class="item-cash">💵</div>
+
+        <!-- 3. Trophy & Win -->
+        <div class="item-trophy">🏆</div>
       </div>
     </a>
     
