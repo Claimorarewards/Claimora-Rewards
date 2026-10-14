@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claimora Rewards - Official Gift Cards & Rewards</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f1f5f9;
+      color: #0f172a;
+      padding: 15px 10px;
+      display: flex;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .claimora-wrapper {
+      width: 100%;
+      max-width: 440px;
+      margin: 0 auto;
+    }
+
+    /* Header Yenye Mwonekano wa Kibrand */
+    .brand-header {
+      background: linear-gradient(135deg, #0284c7, #06b6d4);
+      color: #ffffff;
+      padding: 22px 16px;
+      border-radius: 18px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(2, 132, 199, 0.2);
+      margin-bottom: 20px;
+    }
+    .brand-header h1 {
+      font-size: 25px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    }
+    .brand-header p {
+      font-size: 13.5px;
+      line-height: 1.5;
+      opacity: 0.96;
+      font-weight: 400;
+    }
+
+    /* Boksi la Zawadi Linalocheza */
+    .promo-banner {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .bouncing-gift {
+      width: 130px;
+      height: 130px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(255, 87, 34, 0.25);
+      animation: bounce-rotate 2s infinite ease-in-out;
+      border: 3px solid #ffffff;
+    }
+    @keyframes bounce-rotate {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-8px) scale(1.04); box-shadow: 0 15px 30px rgba(255, 87, 34, 0.4); }
+    }
+
+    /* Orodha ya Kadi za Wastani */
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .gift-card-item {
+      display: block;
+      text-decoration: none !important;
+      background: #ffffff;
+      border: 2px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      transition: all 0.25s ease;
+      width: 92%;
+      margin: 0 auto;
+    }
+    .gift-card-item:hover, .gift-card-item:active {
+      border-color: #ff5722;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 87, 34, 0.15);
+    }
+
+    /* Kichwa cha Kadi na Nembo Halisi */
+    .card-title-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+    .brand-icon {
+      width: 26px;
+      height: 26px;
+      object-fit: contain;
+    }
+    .card-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1e293b;
+    }
+    .card-amount {
+      font-size: 21px;
+      font-weight: 800;
+      color: #16a34a;
+      margin-bottom: 12px;
+    }
+
+    /* Kitufe cha Kuingizia Pesa */
+    .action-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      padding: 13px 0;
+      background: linear-gradient(90deg, #ff5722, #f97316);
+      color: #ffffff !important;
+      font-weight: 800;
+      font-size: 15px;
+      border-radius: 30px;
+      box-shadow: 0 4px 15px rgba(255, 87, 34, 0.35);
+      animation: pulse-glow 1.8s infinite;
+    }
+    @keyframes pulse-glow {
+      0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7); }
+      70% { transform: scale(1.02); box-shadow: 0 0 0 10px rgba(255, 87, 34, 0); }
+      100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 87, 34, 0); }
+    }
+
+    .finger-pointer {
+      display: inline-block;
+      font-size: 18px;
+      animation: bounce-finger 1s infinite alternate;
+    }
+    @keyframes bounce-finger {
+      0% { transform: translateX(-3px); }
+      100% { transform: translateX(3px); }
+    }
+
+    /* Maelekezo ya Chini */
+    .instructions-card {
+      width: 92%;
+      margin: 0 auto 16px auto;
+      background: #ffffff;
+      border-left: 5px solid #0284c7;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    .instructions-card h3 {
+      font-size: 14px;
+      color: #0284c7;
+      margin-bottom: 8px;
+    }
+    .instructions-card ol {
+      padding-left: 18px;
+      font-size: 12.5px;
+      color: #475569;
+      line-height: 1.6;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 11px;
+      color: #94a3b8;
+      font-style: italic;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="claimora-wrapper">
+
+  <!-- Header Section -->
+  <div class="brand-header">
+    <h1>🎁 Claimora Rewards</h1>
+    <p>Discover gift card information, rewards programs, special offers, and giveaway opportunities. Explore promotion details, eligibility requirements, and helpful tips to make informed choices.</p>
+  </div>
+
+  <!-- Bouncing Gift Image Banner -->
+  <div class="promo-banner">
+    <img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=500&auto=format&fit=crop&q=60" alt="Exclusive Gift Rewards" class="bouncing-gift">
+  </div>
+
+  <!-- Vertical Cards List with Real Brand Icons -->
+  <div class="card-list">
+
+    <!-- Amazon Card -->
+    <a href="https://uplcm.com/4/12012476" target="_blank" class="gift-card-item">
+      <div class="card-title-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" class="brand-icon">
+        <span class="card-title">Amazon eGift Card</span>
+      </div>
+      <div class="card-amount">$100.00 REWARD</div>
+      <div class="action-button">
+        <span class="finger-pointer">👉</span> CLICK HERE TO CLAIM <span class="finger-pointer">👈</span>
+      </div>
+    </a>
+
+    <!-- PayPal Card -->
+    <a href="https://uplcm.com/4/12012476" target="_blank" class="gift-card-item">
+      <div class="card-title-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal" class="brand-icon">
+        <span class="card-title">PayPal Cash Voucher</span>
+      </div>
+      <div class="card-amount">$100.00 REWARD</div>
+      <div class="action-button">
+        <span class="finger-pointer">👉</span> CLICK HERE TO CLAIM <span class="finger-pointer">👈</span>
+      </div>
+    </a>
+
+    <!-- Walmart Card (Imewekwa Badala ya Google Play) -->
+    <a href="https://uplcm.com/4/12012476" target="_blank" class="gift-card-item">
+      <div class="card-title-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/Walmart_Spark.svg" alt="Walmart" class="brand-icon">
+        <span class="card-title">Walmart eGift Card</span>
+      </div>
+      <div class="card-amount">$100.00 REWARD</div>
+      <div class="action-button">
+        <span class="finger-pointer">👉</span> CLICK HERE TO CLAIM <span class="finger-pointer">👈</span>
+      </div>
+    </a>
+
+    <!-- Apple Card -->
+    <a href="https://uplcm.com/4/12012476" target="_blank" class="gift-card-item">
+      <div class="card-title-box">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple" class="brand-icon">
+        <span class="card-title">Apple App Store Card</span>
+      </div>
+      <div class="card-amount">$50.00 REWARD</div>
+      <div class="action-button">
+        <span class="finger-pointer">👉</span> CLICK HERE TO CLAIM <span class="finger-pointer">👈</span>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- Easy Steps -->
+  <div class="instructions-card">
+    <h3>⚡ Easy Steps to Get Started:</h3>
+    <ol>
+      <li>Tap any <strong>"CLICK HERE TO CLAIM"</strong> button above.</li>
+      <li>Complete a quick sponsor verification process (1-2 minutes).</li>
+      <li>Receive and redeem your digital code instantly!</li>
+    </ol>
+  </div>
+
+  <div class="footer-note">
+    *Sponsored promotional offers provided by verified network partners.
+  </div>
+
+</div>
+
+</body>
+</html>
