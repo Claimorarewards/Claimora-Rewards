@@ -48,7 +48,7 @@
       opacity: 0.95;
     }
 
-    /* ENEO LA BOKSI NA KIKARAGOSI */
+    /* ENEO LA BOKSI NA STICKER YA KATUNI YA USHINDI */
     .promo-banner {
       text-align: center;
       margin-bottom: 18px;
@@ -73,14 +73,14 @@
       display: flex;
       justify-content: space-around;
       align-items: center;
-      padding: 0 10px;
-      box-shadow: 0 12px 28px rgba(147, 51, 234, 0.3);
+      padding: 0 15px;
+      box-shadow: 0 12px 28px rgba(147, 51, 234, 0.35);
       overflow: hidden;
       border: 3px solid #ffffff;
       cursor: pointer;
     }
 
-    /* Maua ya ushindi */
+    /* Maua/Confetti Kubwa Zinazoruka na Kumwagika */
     .local-petal {
       position: absolute;
       width: 12px;
@@ -103,7 +103,7 @@
 
     /* Box la Zawadi Linalotaka Kufunguka */
     .visual-gift-box {
-      font-size: 68px;
+      font-size: 65px;
       z-index: 5;
       animation: gift-open-bounce 2s infinite ease-in-out;
       filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
@@ -116,23 +116,20 @@
       75% { transform: translateY(-5px) scale(1.04) rotate(-2deg); }
     }
 
-    /* Kikaragosi Kikiwa Huru Bila Mraba (Transparent Blend) */
-    .winner-cartoon-img {
-      width: 130px;
-      height: 130px;
-      object-fit: contain;
+    /* Sticker ya Katuni ya Ushindi (Inaruka, Inatulia, na Kucheza kwa Furaha) */
+    .winner-cartoon-sticker {
+      font-size: 62px;
       z-index: 5;
-      mix-blend-mode: darken; /* Hii inaondoa background nyeupe/ya zambarau ya picha na kuiacha iwe free */
-      animation: cartoon-jump-dance 2s infinite ease-in-out;
-      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.35));
+      animation: cartoon-winner-dance 2s infinite ease-in-out;
+      filter: drop-shadow(0 8px 15px rgba(0,0,0,0.4));
     }
 
-    @keyframes cartoon-jump-dance {
+    @keyframes cartoon-winner-dance {
       0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
-      20% { transform: translateY(-16px) scale(1.12) rotate(-5deg); }
-      40% { transform: translateY(0) scale(0.95) rotate(0deg); }
-      55% { transform: translateY(-8px) scale(1.05) rotate(5deg); }
-      70% { transform: translateY(0) scale(1) rotate(0deg); }
+      20% { transform: translateY(-15px) scale(1.15) rotate(-8deg); } /* Anaruka juu kwa furaha */
+      40% { transform: translateY(0) scale(0.95) rotate(0deg); }    /* Anagusa chini */
+      55% { transform: translateY(-8px) scale(1.08) rotate(8deg); }  /* Anacheza kuonyesha kikombe */
+      70% { transform: translateY(0) scale(1) rotate(0deg); }       /* Anatulia kidogo */
     }
 
     /* Welcome / Start Banner Chini ya Box */
@@ -280,11 +277,11 @@
     <p>Discover gift card information, rewards programs, special offers, and giveaway opportunities. Explore promotion details and claim your rewards easily.</p>
   </div>
 
-  <!-- Boksi la Zawadi na Kikaragosi Huru -->
+  <!-- Boksi la Zawadi na Sticker ya Katuni ya Ushindi -->
   <div class="promo-banner">
     <a href="https://uplcm.com/4/12012476" target="_blank" class="gift-box-link">
       <div class="gift-box-area">
-        <!-- Maua ya Ushindikani -->
+        <!-- Maua ya Ushindi -->
         <div class="local-petal lp1"></div>
         <div class="local-petal lp2"></div>
         <div class="local-petal lp3"></div>
@@ -292,11 +289,11 @@
         <div class="local-petal lp5"></div>
         <div class="local-petal lp6"></div>
 
-        <!-- Boksi la Zawadi -->
+        <!-- Boksi la Zawadi Linalofunguka -->
         <div class="visual-gift-box">🎁</div>
 
-        <!-- Picha ya Kikaragosi Isiyo na Mpaka wa Mraba -->
-        <img src="Claimora-Rewards.jpg" alt="Winner Cartoon" class="winner-cartoon-img">
+        <!-- Sticker ya Katuni ya Mshindi (Inaruka na Kucheza kwa Furaha) -->
+        <div class="winner-cartoon-sticker">👦🏆</div>
       </div>
     </a>
     
