@@ -67,7 +67,7 @@
     .gift-box-area {
       position: relative;
       width: 100%;
-      height: 180px;
+      height: 190px;
       background: linear-gradient(135deg, #4f46e5, #9333ea);
       border-radius: 22px;
       display: flex;
@@ -80,28 +80,30 @@
       cursor: pointer;
     }
 
-    /* Maua/Confetti Zinazoruka Ndani ya Box Area Tu */
+    /* Maua/Confetti Kubwa na Nyingi Zinazoruka na Kumwagika Ndani ya Box Area */
     .local-petal {
       position: absolute;
-      width: 8px;
-      height: 12px;
-      opacity: 0.9;
-      border-radius: 3px;
+      width: 11px;
+      height: 16px;
+      opacity: 0.95;
+      border-radius: 4px;
       animation: petal-fall linear infinite;
     }
     @keyframes petal-fall {
       0% { top: -20px; transform: translateX(0) rotate(0deg); }
-      100% { top: 195px; transform: translateX(35px) rotate(360deg); }
+      100% { top: 210px; transform: translateX(40px) rotate(360deg); }
     }
 
-    .lp1 { left: 10%; background: #ff2a75; animation-duration: 2.2s; }
-    .lp2 { left: 30%; background: #ffd700; animation-duration: 3s; animation-delay: 0.5s; }
-    .lp3 { left: 55%; background: #00e5ff; animation-duration: 2.5s; animation-delay: 0.2s; }
-    .lp4 { left: 80%; background: #22c55e; animation-duration: 2.8s; animation-delay: 0.7s; }
+    .lp1 { left: 8%; background: #ff2a75; animation-duration: 1.8s; }
+    .lp2 { left: 22%; background: #ffd700; animation-duration: 2.3s; animation-delay: 0.3s; width: 14px; height: 14px; }
+    .lp3 { left: 38%; background: #00e5ff; animation-duration: 2.0s; animation-delay: 0.1s; }
+    .lp4 { left: 55%; background: #22c55e; animation-duration: 2.5s; animation-delay: 0.5s; }
+    .lp5 { left: 72%; background: #ff9900; animation-duration: 1.9s; animation-delay: 0.2s; width: 13px; height: 13px; }
+    .lp6 { left: 88%; background: #e879f9; animation-duration: 2.2s; animation-delay: 0.4s; }
 
     /* Box la Zawadi Linalotaka Kufunguka */
     .visual-gift-box {
-      font-size: 65px;
+      font-size: 70px;
       z-index: 5;
       animation: gift-open-bounce 2s infinite ease-in-out;
       filter: drop-shadow(0 8px 12px rgba(0,0,0,0.3));
@@ -114,23 +116,19 @@
       75% { transform: translateY(-5px) scale(1.04) rotate(-2deg); }
     }
 
-    /* Picha ya Kikaragosi Inayoruka na Kucheza kwa Ushindi */
+    /* Picha ya Kikaragosi (Huru Bila Duara, Inaruka na Kucheza) */
     .winner-cartoon-img {
-      width: 95px;
-      height: 95px;
+      width: 110px;
+      height: 110px;
       object-fit: contain;
       z-index: 5;
-      border-radius: 50%;
-      background: #ffffff;
-      padding: 4px;
-      border: 2px solid #ffd700;
       animation: cartoon-jump-dance 2s infinite ease-in-out;
-      filter: drop-shadow(0 6px 12px rgba(0,0,0,0.3));
+      filter: drop-shadow(0 8px 15px rgba(0,0,0,0.35));
     }
 
     @keyframes cartoon-jump-dance {
       0%, 100% { transform: translateY(0) scale(1) rotate(0deg); }
-      20% { transform: translateY(-15px) scale(1.12) rotate(-5deg); }
+      20% { transform: translateY(-16px) scale(1.12) rotate(-5deg); }
       40% { transform: translateY(0) scale(0.95) rotate(0deg); }
       55% { transform: translateY(-8px) scale(1.05) rotate(5deg); }
       70% { transform: translateY(0) scale(1) rotate(0deg); }
@@ -281,20 +279,22 @@
     <p>Discover gift card information, rewards programs, special offers, and giveaway opportunities. Explore promotion details and claim your rewards easily.</p>
   </div>
 
-  <!-- Boksi la Zawadi na Picha ya Kikaragosi -->
+  <!-- Boksi la Zawadi na Picha Huru ya Kikaragosi -->
   <div class="promo-banner">
     <a href="https://uplcm.com/4/12012476" target="_blank" class="gift-box-link">
       <div class="gift-box-area">
-        <!-- Maua yanayoruka ndani ya box tu -->
+        <!-- Maua Yenye Ukubwa na Yaliyojaa Zaidi Ndani ya Box Area -->
         <div class="local-petal lp1"></div>
         <div class="local-petal lp2"></div>
         <div class="local-petal lp3"></div>
         <div class="local-petal lp4"></div>
+        <div class="local-petal lp5"></div>
+        <div class="local-petal lp6"></div>
 
         <!-- Boksi la Zawadi -->
         <div class="visual-gift-box">🎁</div>
 
-        <!-- Picha ya Kikaragosi Uliyoiweka -->
+        <!-- Picha Huru ya Kikaragosi (Bila Duara) -->
         <img src="Claimora-Rewards.jpg" alt="Winner Cartoon" class="winner-cartoon-img">
       </div>
     </a>
