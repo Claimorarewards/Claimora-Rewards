@@ -12,9 +12,10 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #fef3c7 100%);
+      /* Background kuu ya kiza safi inayoendana na ukungu wa picha ya chini */
+      background-color: #0b132b;
       color: #0f172a;
-      padding: 20px 10px 0 10px;
+      padding: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -25,6 +26,10 @@
       width: 100%;
       max-width: 440px;
       margin: 0 auto;
+      /* Tumeondoa rangi ya njano na kuweka gradient safi ya kijivu na kiza cha kisasa */
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      padding: 15px 12px 25px 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
     /* Header Section */
@@ -140,11 +145,11 @@
     /* WELCOME BANNER */
     .cta-welcome-banner {
       margin-top: 14px;
-      background: #ffffff;
+      background: #1e293b;
       padding: 14px 16px;
       border-radius: 18px;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.06);
-      border: 2px dashed #0284c7;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      border: 2px dashed #38bdf8;
       text-align: center;
       width: 95%;
     }
@@ -152,12 +157,12 @@
     .cta-welcome-banner h2 {
       font-size: 14px;
       font-weight: 800;
-      color: #0f172a;
+      color: #f8fafc;
       line-height: 1.5;
     }
 
     .cta-welcome-banner h2 span {
-      color: #0284c7;
+      color: #38bdf8;
     }
 
     /* Orodha ya Kadi za Zawadi */
@@ -172,11 +177,11 @@
       display: block;
       text-decoration: none !important;
       background: #ffffff;
-      border: 2px solid #e2e8f0;
+      border: 2px solid #334155;
       border-radius: 18px;
       padding: 18px;
       text-align: center;
-      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
       transition: all 0.25s ease;
       width: 95%;
       margin: 0 auto;
@@ -184,7 +189,7 @@
     .gift-card-item:hover, .gift-card-item:active {
       border-color: #ff5722;
       transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(255, 87, 34, 0.18);
+      box-shadow: 0 10px 25px rgba(255, 87, 34, 0.3);
     }
 
     /* Nembo Halisi na Kichwa cha Kadi */
@@ -248,40 +253,39 @@
     /* Easy Steps */
     .instructions-card {
       width: 95%;
-      margin: 0 auto 16px auto;
-      background: #ffffff;
+      margin: 0 auto;
+      background: #1e293b;
       border-left: 5px solid #0284c7;
       padding: 16px;
       border-radius: 14px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
     .instructions-card h3 {
       font-size: 14px;
-      color: #0284c7;
+      color: #38bdf8;
       margin-bottom: 8px;
     }
     .instructions-card ol {
       padding-left: 18px;
       font-size: 12.5px;
-      color: #475569;
+      color: #cbd5e1;
       line-height: 1.6;
     }
 
     .footer-note {
       text-align: center;
-      font-size: 11.5px;
-      color: #475569;
-      font-weight: 500;
+      font-size: 11px;
+      color: #94a3b8;
       font-style: italic;
-      padding: 10px 15px 25px 15px;
+      padding: 12px 10px 0 10px;
     }
 
-    /* FOOTER YA MWISHO ILIYOSONGEZWA NA KUUNGANISHWA VIZURI KABISA */
+    /* REAL CROWD FOOTER - IMEUNGANISHWA MOJA KWA MOJA BILA MWANYA */
     .real-crowd-footer {
       width: 100vw;
       margin-left: calc(-50vw + 50%);
       margin-right: calc(-50vw + 50%);
-      height: 240px;
+      height: 220px;
       position: relative;
       background-image: url('Claimora-Rewards.jpg');
       background-size: cover;
@@ -290,9 +294,9 @@
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      padding-bottom: 18px;
-      margin-top: 10px;
-      border-top: 4px solid #0284c7;
+      padding-bottom: 15px;
+      margin-top: 0;
+      border-top: 3px solid #0284c7;
     }
 
     .footer-overlay {
@@ -300,18 +304,18 @@
       bottom: 0;
       left: 0;
       width: 100%;
-      height: 60px;
-      background: linear-gradient(to top, rgba(15, 23, 42, 0.95), transparent);
+      height: 55px;
+      background: linear-gradient(to top, rgba(11, 19, 43, 0.95), transparent);
       display: flex;
       justify-content: center;
       align-items: flex-end;
-      padding-bottom: 15px;
+      padding-bottom: 12px;
       z-index: 1;
     }
 
     .copyright-text {
       color: #ffffff;
-      font-size: 12px;
+      font-size: 11.5px;
       font-weight: 600;
       letter-spacing: 0.5px;
       text-shadow: 0 2px 4px rgba(0,0,0,0.9);
