@@ -12,9 +12,10 @@
     }
     body {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #f8fafc;
+      /* Background mpya: Mchanganyiko safi wa kijivu cha kisasa, maji maji hafifu na mguso wa joto la asili */
+      background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 50%, #fef3c7 100%);
       color: #0f172a;
-      padding: 15px 10px;
+      padding: 20px 10px;
       display: flex;
       justify-content: center;
       min-height: 100vh;
@@ -28,16 +29,17 @@
 
     /* Header Section */
     .brand-header {
-      background: linear-gradient(135deg, #0284c7, #06b6d4);
+      background: linear-gradient(135deg, #0284c7, #0369a1);
       color: #ffffff;
-      padding: 20px 16px;
-      border-radius: 18px;
+      padding: 22px 16px;
+      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 10px 20px rgba(2, 132, 199, 0.2);
+      box-shadow: 0 10px 25px rgba(2, 132, 199, 0.25);
       margin-bottom: 18px;
+      border: 1px solid rgba(255,255,255,0.2);
     }
     .brand-header h1 {
-      font-size: 25px;
+      font-size: 26px;
       font-weight: 800;
       margin-bottom: 6px;
       text-shadow: 0 2px 4px rgba(0,0,0,0.15);
@@ -68,13 +70,13 @@
       position: relative;
       width: 100%;
       height: 190px;
-      background: linear-gradient(135deg, #4f46e5, #9333ea);
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
       border-radius: 22px;
       display: flex;
       justify-content: space-around;
       align-items: center;
       padding: 0 10px;
-      box-shadow: 0 12px 28px rgba(147, 51, 234, 0.35);
+      box-shadow: 0 12px 30px rgba(124, 58, 237, 0.35);
       overflow: hidden;
       border: 3px solid #ffffff;
       cursor: pointer;
@@ -100,7 +102,7 @@
     .lp4 { left: 70%; background: #22c55e; animation-duration: 2.4s; animation-delay: 0.5s; }
     .lp5 { left: 88%; background: #ff9900; animation-duration: 1.8s; animation-delay: 0.2s; width: 13px; height: 13px; }
 
-    /* 1. KIPENGELE CHA KWANZA: Gift Box Inayoruka */
+    /* Vitu Vitatu vya Ushindi */
     .item-box {
       font-size: 58px;
       z-index: 5;
@@ -112,7 +114,6 @@
       50% { transform: translateY(-8px) scale(1.08); }
     }
 
-    /* 2. KIPENGELE CHA PILI: Noti za Pesa / Sarafu (Cash/Money) */
     .item-cash {
       font-size: 50px;
       z-index: 5;
@@ -124,7 +125,6 @@
       100% { transform: translateY(8px) rotate(8deg) scale(1.1); }
     }
 
-    /* 3. KIPENGELE CHA TATU: Kikombe cha Ushindi & Nyota (Trophy & Stars) */
     .item-trophy {
       font-size: 52px;
       z-index: 5;
@@ -141,9 +141,9 @@
     .welcome-card {
       margin-top: 12px;
       background: #ffffff;
-      padding: 11px 16px;
+      padding: 12px 16px;
       border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
       border: 2px dashed #0284c7;
       text-align: center;
       width: 95%;
@@ -169,10 +169,10 @@
       text-decoration: none !important;
       background: #ffffff;
       border: 2px solid #e2e8f0;
-      border-radius: 16px;
-      padding: 16px;
+      border-radius: 18px;
+      padding: 18px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.04);
       transition: all 0.25s ease;
       width: 95%;
       margin: 0 auto;
@@ -180,7 +180,7 @@
     .gift-card-item:hover, .gift-card-item:active {
       border-color: #ff5722;
       transform: translateY(-3px);
-      box-shadow: 0 8px 20px rgba(255, 87, 34, 0.15);
+      box-shadow: 0 10px 25px rgba(255, 87, 34, 0.18);
     }
 
     /* Nembo Halisi na Kichwa cha Kadi */
@@ -203,7 +203,7 @@
       color: #1e293b;
     }
     .card-amount {
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 800;
       color: #16a34a;
       margin-bottom: 12px;
@@ -216,7 +216,7 @@
       justify-content: center;
       gap: 6px;
       width: 100%;
-      padding: 13px 0;
+      padding: 14px 0;
       background: linear-gradient(90deg, #ff5722, #f97316);
       color: #ffffff !important;
       font-weight: 800;
@@ -247,9 +247,9 @@
       margin: 0 auto 16px auto;
       background: #ffffff;
       border-left: 5px solid #0284c7;
-      padding: 15px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+      padding: 16px;
+      border-radius: 14px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.04);
     }
     .instructions-card h3 {
       font-size: 14px;
@@ -266,7 +266,7 @@
     .footer-note {
       text-align: center;
       font-size: 11px;
-      color: #94a3b8;
+      color: #64748b;
       font-style: italic;
       padding-bottom: 20px;
     }
